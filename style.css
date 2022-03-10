@@ -1,0 +1,135 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* hsl(277, 64%, 61%) */
+:root {
+  font-size: 15px;
+  font-family: Inter;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  width: 80%;
+  margin: 5em auto;
+  border-radius: 5px;
+}
+
+.content {
+  background-color: hsl(244, 38%, 16%);
+  color: white;
+  width: 50%;
+  padding: 0;
+}
+
+#main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  /* margin: 1em; */
+}
+
+#text {
+  font-size: 1rem;
+  /* margin: 0 2em; */
+}
+
+.img-background {
+}
+
+.img-section {
+  width: 50%;
+  /* background-image: url("images/image-header-desktop.jpg"); */
+  background: linear-gradient(rgba(170, 92, 219, 0.4), rgba(170, 92, 219, 0.4)),
+    url("images/image-header-desktop.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.highlight {
+  color: hsl(277, 64%, 61%);
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding-top: 6em;
+}
+
+.companies span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+    padding: 1em;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: inherit auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .img-section {
+    background: linear-gradient(
+        rgba(170, 92, 219, 0.4),
+        rgba(170, 92, 219, 0.4)
+      ),
+      url("images/image-header-mobile.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    order: -1;
+  }
+
+  .companies {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .companies div {
+    margin-bottom: 1.5em;
+  }
+
+  .companies span {
+    text-align: center;
+  }
+
+  #text {
+    text-align: center;
+  }
+
+  #main-heading {
+    text-align: center;
+  }
+}
